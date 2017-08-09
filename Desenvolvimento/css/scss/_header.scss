@@ -1,0 +1,62 @@
+@import "variaveis.scss";
+
+header {
+    .info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $cor2;
+        
+        .social {
+            i {
+                margin: 0px 10px;
+                color: $cor1;
+                &:hover {
+                    color: $cor3;
+                    transition: .3s;
+                }
+            }
+        }
+        
+        .funcionamento {
+            text-transform: uppercase;
+            font-size: $f_info;
+            color: $cor1;
+            
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: $cor3;
+            }
+        }
+        
+    }
+    
+    .menu {
+        
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        background-color: $cor1;
+        
+        .logo {
+            margin: 10px;
+        }
+        
+        .itens-menu {
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $cor2;
+                padding: 10px 5px;
+                font-size: 14px;
+                
+                &:hover {
+                    color: $cor3;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+   
+}
