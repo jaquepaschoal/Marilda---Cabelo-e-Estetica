@@ -1,7 +1,79 @@
 @import "header.scss";
+@import "slide.scss";
+@import "services.scss";
+@import "team.scss";
+@import "testimonials.scss";
+@import url('https://fonts.googleapis.com/css?family=Overlock');
+
 body {
-    font-family: "nunito";
+ font-family: 'Overlock', cursive;
 }
 img {
     width: 100%;
 }
+
+ //General
+
+.call-action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border: 2px solid $cor3;
+    text-align: center;
+    height: 40px;
+    margin: 60px 0;
+    
+      &:hover {
+        background-color: $cor3;
+        transition: 0.3s;  
+        }
+    a {
+        text-decoration: none;
+        color: $cor3;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 30px 65px;
+        letter-spacing: .3em;
+        
+        &:hover {
+            color: $cor2;
+            transition: 0.3s;
+            font-weight: normal;
+        }
+    }
+}
+
+.sep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    .part1 {
+        width: 10%;
+        height: 1px;
+        background-color: $cor3;
+    }
+    
+    i {
+        color: $cor3; 
+    }
+    
+    .part2 {
+        width: 60%;
+        height: 1px;
+        background-color: $cor3;
+    }
+}
+
+.title {
+        margin: 60px 0;
+        
+        h1 {
+            margin: 0;
+            color: $cor3;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+    }

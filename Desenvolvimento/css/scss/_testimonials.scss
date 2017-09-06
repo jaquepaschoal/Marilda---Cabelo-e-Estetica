@@ -1,0 +1,42 @@
+@import "variaveis.scss";
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $cor7;
+    
+    .profile-test {
+        img {    
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    
+    .description-test {
+        color: $cor2;
+        width: 80%;
+        text-align: center;
+         &::before {
+            float: left;
+            display: inline;
+            font-family: fontAwesome;
+            content: '\f10d';
+            color: $cor3;
+            font-size: 26px;
+        }
+        
+        &::after {
+            float: right;
+            display: inline;
+            content: '\f10e';
+            font-family: fontAwesome;
+            color: $cor3;
+            font-size: 26px;
+        }
+        
+        
+    }
+    
+}
