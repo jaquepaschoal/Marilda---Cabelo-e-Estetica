@@ -13,51 +13,51 @@
         align-items: center;
     }  
     
-    .staff {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
+    li {   
         
-        .img-staff {
-            width: 30%;
+        .staff {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+
+            .img-staff {
+                width: 30%;
+            }
+        }
+
+        .description-staff {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 30%;
+                max-width: 250px;
+                text-align: center;
+
+                    h2 {
+                        margin: 15px 0 0 0;
+                    }
+
+                    span::after {
+                        content: '';
+                        display: block;
+                        width: 200px;
+                        height: 1px;
+                        background-color: $cor6;
+                        margin-top: 15px;
+                    }
+            }
         }
     }
     
-    .description-staff {
-        display: flex;
-        justify-content: space-around;
-        width: 80%;
-        
-        
-        .content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 30%;
-            max-width: 250px;
-            text-align: center;
-            
-            h2 {
-                margin: 15px 0 0 0;
-            }
-            
-            span::after {
-                content: '';
-                display: block;
-                width: 200px;
-                height: 1px;
-                background-color: $cor6;
-                margin-top: 15px;
-            }
-        }
-    }
     
 }
 
-
-/*Plugin de Slide*/
-
-.rslides, .rslides_portfolio {
+.rslides, .rslides_equipe {
 	position: relative;
 	list-style: none;
 	overflow: hidden;
@@ -66,7 +66,7 @@
 	margin: 0;
 }
 
-.rslides li, .rslides_portfolio li{
+.rslides li, .rslides_equipe li{
 	-webkit-backface-visibility: hidden;
 	position: absolute;
 	display: none;
@@ -75,19 +75,20 @@
 	top: 0;
 }
 
-.rslides li:first-child, .rslides_portfolio li:first-child{
+.rslides li:first-child, .rslides_equipe li:first-child{
 	position: relative;
 	display: block;
 	float: left;
 }
 
-.rslides img, .rslides_portfolio img {
+.rslides img, .rslides_equipe img {
 	display: block;
 	height: auto;
 	width: 100%;
 	border: 0;
 }
 
+//bolinhas
 .rslides_tabs {
 	text-align: center;
 	margin-top: 14px;
@@ -102,8 +103,8 @@
 	display: inline-block;
 	width: 12px;
 	height: 12px;
-	background: #1d1d1d;
-	color: #1d1d1d;
+	background: $cor1;
+	color: $cor1;
 	border-radius: 20px;
 	overflow: hidden;
 	text-indent: -200px;
@@ -113,3 +114,4 @@
 	background: $cor3;
 	color: $cor3;
 }
+
